@@ -19,5 +19,5 @@ scipy==1.11.1
 sqlparse==0.4.3
 sympy==1.12
 tzdata==2022.7
-virtualenv==20.17.1
+
 
