@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
+  <link rel="stylesheet" href="{% static "/css/HomePage.css" %}">
+  <title>FireWorks of Art</title>
+  <link rel="icon" type="image/x-icon" href="{% static "/images/logo.PNG" %}">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'Shop' %}">
+   
+      <img src="{% static "images/logo.PNG" %}">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    
+    <!--<div class="collapse navbar-collapse justify-content-center" id="navbarNav">-->
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'Shop' %}">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Gallery
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="{% url 'Sketches' %}">Sketches</a>
+            <a class="dropdown-item" href="{% url 'Paintings' %}">Paintings</a>
+            <a class="dropdown-item" href="{% url 'Scultptures' %}">Sculptures</a>
+            <a class="dropdown-item" href="{% url 'ColorPencilArt' %}">Color Pencil Art</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'ContactUs' %}">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'AboutUs' %}">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="font-weight-bold font-italic text-center">“All you need to paint is a few tools, a little instruction,
+        and a vision in your mind.”<br> ~ Bob Ross</p>
+    </div>
+    <div class="col-sm-4">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <img src="{% static "images/logo.PNG" %}">
+          <div class="carousel-item active">
+            <img src="{% static "images/slider1.jpg" %}" alt="{% static "images/slider1.jpg" %}">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static "images/slider2.jpg" %}" alt="{% static "images/slider2.jpg" %}">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static "images/slider3.jpg" %}" alt="{% static "images/slider1.jpg" %}">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm-4">
+      <p class="font-weight-bold font-italic text-center">“In art, the hand can never anything higher than the heart can
+        imagine.”<br> ~ Ralph Waldo Emerson</p>
+    </div>
+
+  </div>
+
+  <div class="container-fluid Design">
+    <h1 class="font-italic">OUR CREATIONS</h1>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="{% static "images/slider1.jpg" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sketches</h5>
+          <p class="card-text">Sketch, traditionally a rough drawing in which an artist notes down his preliminary ideas for a work that will eventually be realized with greater precision and detail.</p>
+          <a href="{% url 'Sketches' %}" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="{% static "images/scu.jpg" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Sculpture</h5>
+          <p class="card-text">Sculpture, an artistic form in which hard or plastic materials are worked into three-dimensional art<br> objects.</p>
+          <a href="{% url 'Scultptures' %}" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="{% static "images/colorPencil.jpg" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card Pencil Art</h5>
+          <p class="card-text">Colored pencil techniques are similar to those of other drawing media, including hatching and crosshatching to create complex colors and tones on paper</p>
+          <a href="{% url 'ColorPencilArt' %}" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <img src="{% static "images/slider2.jpg" %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Paintings</h5>
+          <p class="card-text">Paintings, the expression of ideas and emotions, with the creation of certain aesthetic qualities, in a two-dimensional visual language</p>
+          <a href="{% url 'Paintings' %}" class="btn btn-primary">See More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-fluid Design">
+    <h1 class="font-italic">SOCIAL REFRENCE</h1>
+  </div>
+
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/qSWBlDGHP54" allowfullscreen></iframe>
+  </div>
+
+
+  <footer class="bg-light text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/search/top?q=fireworks%20of%20art" class="fa fa-facebook"></a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/fireworks_of_art/" class="fa fa-instagram"></a>
+
+        <a href="https://wa.me/918971877669" class="fa fa-whatsapp"></a>
+
+
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0,170,255);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://www.fireworksart.in/">fireworksart.in</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
