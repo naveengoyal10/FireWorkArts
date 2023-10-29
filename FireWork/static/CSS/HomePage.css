@@ -1,4 +1,4 @@
-.navbarNavAltMarkup{
+    .navbarNavAltMarkup{
     font-size: 30px;
     background-color: rgb(0, 170, 255);
 
@@ -77,6 +77,10 @@
   
   .fa:hover {
       opacity: 0.7;
+  }
+
+  .topnav-right {
+    float: right;
   }
 
 
